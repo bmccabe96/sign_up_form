@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="left-side">
+        <div class="logo-bar">
+            <div class="logo">
+                <img src="images/noun-hobbit-1613668.png" alt="tolkien logo">
+            </div>
+            <div class="logo-text">The Fellowship</div>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="top-right">
+            <p class="description main">
+                Does a hopeless quest sound like fun to you? If so, then sign up below to accompany a band of hobbits, a ranger, an elf, a dwarf, a warrior, and a bad ass wizard to the fires of Orodruin.
+            </p>
+            <p class="description secondary">
+                <em>Just kidding.</em> They don't want you and this submission won't bring you to Middle Earth.
+            </p>
+        </div>
+        <div class="middle-right">
+            <div class="form-heading">Let's do this!</div>
+            <form id="form">
+                <div class="form-column">
+                    <div class="form-row">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required autocomplete="off">
+                    </div>
+                    <div class="form-row">
+                        <label for="palantir">Palantir ID</label>
+                        <input type="text" id="palantir" name="palantir" required autocomplete="off">
+                    </div>
+                    <div class="form-row">
+                        <label for="first-name">Password</label>
+                        <input type="password" id="password" name="password" required autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-row">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required autocomplete="off">
+                    </div>
+                    <div class="form-row">
+                        <label for="residence">Residence</label>
+                        <input type="text" id="residence" name="residence" required autocomplete="off">
+                    </div>
+                    <div class="form-row">
+                        <label for="password-2">Confirm Password</label>
+                        <input type="password" id="password-2" name="password-2" required autocomplete="off">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-right">
+            <div class="button-wrapper">
+                <button form="form" type="submit">Send Request</button>
+            </div>
+            <div class="existing-account">
+                Already doomed to follow the ring bearer? <a href="">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: logo-font;
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+    --slimy-green: #069E2D;
+    --spanish-green: #058E3F;
+    --dartmouth-green: #04773B;
+    --dark-green: #036016;
+    --forest-green: #03440C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+}
+.left-side {
+    position: relative;
+    height: 100vh;
+    min-width: 35vw;
+    background-image: url(images/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
+    background-size: 100% 100%;
+    border: 3px solid var(--dark-green);
+}
+.logo-bar{
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    opacity: .7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--forest-green);
+    font-weight: bold;
+    font-family: logo-font, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
+.logo > img{
+    width: 100px;
+    height: 100px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+}
+.top-right{
+    font-weight: 500;
+}
+.description.main{
+    padding: 50px 100px 0px 50px;
+}
+.description.secondary{
+    padding: 25px 100px 30px 50px;
+}
+.middle-right{
+    height: 100px;
+    height: max(200px, 45vh);
+    background-color: #e1fae7;
+    box-shadow: 2px 5px #069e2c17;
+}
+.middle-right > form {
+    display: flex;
+}
+.form-heading{
+    font-size: 1.5rem;
+    padding: 15px 100px 10px 50px;
+    font-style: italic;
+}
+.form-column{
+    padding: 10px 50px;
+}
+.form-row{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.form-row > label {
+    font-weight: 500;
+}
+.form-row input[type='text'],
+.form-row input[type='password'],
+.form-row input[type='email'] {
+    background-color: #e1fae7;
+    border: 1px solid var(--slimy-green);
+    border-radius: 4px;
+    width: max(100px, 20vw);
+    padding: 7px;
+    font-size: 1.2;
+}
+.form-row input:focus{
+    border: 1px solid var(--forest-green);
+    outline: none;
+}
+.button-wrapper{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+button{
+    border-color: var(--forest-green);
+    font-family: logo-font, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}
+button:hover{
+    background-color: #e1fae7;
+}
+.existing-account{
+    padding-left: 50px;
+    padding-top: 25px;
+}
+a{
+    color: var(--slimy-green);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--forest-green);
+}
+
+
